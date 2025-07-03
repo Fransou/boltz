@@ -30,7 +30,6 @@ dependencies = [
     "scipy==1.13.1",
     "numba==0.61.0",
     "gemmi==0.6.5",
-    "scikit-learn==1.6.1",
     "chembl_structure_pipeline==1.2.2",
     "cuequivariance_ops_cu12>=0.5.0",
     "cuequivariance_ops_torch_cu12>=0.5.0",
