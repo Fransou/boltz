@@ -489,7 +489,11 @@ class Boltz2(LightningModule):
                         )
 
             pdistogram = self.distogram_module(z)
-            dict_out = {"pdistogram": pdistogram}
+            dict_out = {
+                "pdistogram": pdistogram,
+                "s" : s.cpu(),
+                "z": z.cpu(),
+            }
 
             if (
                 self.run_trunk_and_structure
